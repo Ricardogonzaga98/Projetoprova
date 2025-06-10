@@ -1,113 +1,167 @@
+/* Reset e fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: #f4f7f8;
+  background-color: #f4f9f4;
   color: #333;
   line-height: 1.6;
 }
-h1 {
-  color: #1a73e8;
-  margin-bottom: 0.3rem;
-}
-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-header img {
-  max-width: 120px;
-  margin-top: 0.5rem;
-  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
-}
-section {
-  background: white;
-  padding: 1.5rem 2rem;
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-}
-ul {
-  margin-top: 0.5rem;
-  padding-left: 1.2rem;
-}
-ul li {
-  margin-bottom: 0.8rem;
-}
-/* Form */
-form {
-  background: white;
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-  margin-bottom: 2rem;
-}
-label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: bold;
-}
-input, select, textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.3rem;
-  border: 1.5px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-input:focus, select:focus, textarea:focus {
-  border-color: #2563eb;
-  outline: none;
-  box-shadow: 0 0 8px #93c5fd;
-}
-button {
-  margin-top: 1.5rem;
-  background-color: #2563eb;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-button:hover {
-  background-color: #1e40af;
-}
-.error {
-  color: red;
-  margin-top: 0.3rem;
-  font-size: 0.9rem;
-}
-.success {
-  color: green;
-  margin-top: 1rem;
-  font-weight: bold;
-}
-footer {
-  background-color: #1a73e8;
-  color: white;
-  padding: 1rem 0;
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-  border-radius: 0 0 8px 8px;
-}
 
-footer a {
-  color: #bbe1ff;
+a {
+  color: #007f5f;
   text-decoration: none;
-  margin: 0 0.3rem;
 }
 
-footer a:hover,
-footer a:focus {
+a:hover {
   text-decoration: underline;
 }
 
-.container-footer {
+.container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
+}
+
+/* Cabeçalho principal */
+.hero {
+  background: linear-gradient(to right, #3a6351, #5c946e);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero-icon {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #fcca46;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #fbb034;
+}
+
+/* Seções */
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #3a6351;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+}
+
+/* Formulário */
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  background-color: #3a6351;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #2f4f41;
+}
+
+#msg {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #eee;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.container-footer a {
+  color: #fcca46;
+}
+
+.container-footer a:hover {
+  color: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn-primary {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
 }

@@ -3,104 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ConectaVoluntário - Plataforma de Voluntariado</title>
+  <title>ConectaVoluntário - Faça a Diferença</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>ConectaVoluntário</h1>
-    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Ícone ajudar próximo" />
-    <p>Plataforma que conecta ONGs e voluntários para ampliar o impacto social.</p>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Ícone ajudar próximo" class="hero-icon" />
+      <h1>ConectaVoluntário</h1>
+      <p>Juntos somos mais fortes. Conectando quem precisa com quem quer ajudar.</p>
+      <a href="#cadastro" class="btn-primary">Quero ser voluntário</a>
+    </div>
   </header>
 
-  <section>
-    <h2>Sobre a Plataforma</h2>
-    <p>Esta plataforma foi criada para facilitar a conexão entre a nossa ONG e pessoas dispostas a ajudar. Aqui você encontra as demandas atuais da nossa instituição e pode se cadastrar como voluntário para fazer a diferença!</p>
-  </section>
+  <main class="container">
+    <section>
+      <h2>Sobre a Plataforma</h2>
+      <p>Somos um movimento social que conecta voluntários com causas reais nas comunidades. Acreditamos que todo mundo pode contribuir para transformar vidas e gerar impacto positivo.</p>
+    </section>
 
-  <section>
-    <h2>Demandas Atuais</h2>
-    <ul>
-      <li>Arrecadação de alimentos não perecíveis para comunidades carentes.</li>
-      <li>Doação e distribuição de roupas para pessoas em situação de rua.</li>
-      <li>Voluntários para organização e apoio em eventos de arrecadação.</li>
-      <li>Auxílio em ações de conscientização e apoio social em bairros vulneráveis.</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Demandas Atuais</h2>
+      <ul>
+        <li>📦 Arrecadação de alimentos não perecíveis para comunidades carentes.</li>
+        <li>🧥 Doação e distribuição de roupas para pessoas em situação de rua.</li>
+        <li>🎉 Apoio na organização de eventos beneficentes.</li>
+        <li>🗣️ Ações de conscientização e escuta ativa em bairros vulneráveis.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>As nossas ideias com o Impacto Social</h2>
-    <p>Nosso compromisso com a transformação social vai além da ajuda imediata. Aqui estão algumas iniciativas e ideias que desenvolvemos ou queremos implementar com a ajuda de voluntários:</p>
-    <ul>
-      <li><strong>Oficinas profissionalizantes:</strong> Cursos gratuitos de informática, culinária, costura ou elétrica para capacitação de pessoas em situação de rua e comunidades vulneráveis.</li>
-      <li><strong>Feiras de cidadania:</strong> Ações comunitárias para emissão de documentos, atendimento médico básico e orientação jurídica gratuita.</li>
-      <li><strong>Parcerias com comércios locais:</strong> Para doações de alimentos, roupas, cortes de cabelo e outros serviços solidários.</li>
-      <li><strong>Campanhas educativas em escolas:</strong> Sensibilização de jovens sobre empatia, responsabilidade social e voluntariado.</li>
-      <li><strong>Mutirões ambientais:</strong> Limpeza de espaços públicos, reciclagem e educação sobre o descarte correto do lixo.</li>
-      <li><strong>Rodas de conversa e acolhimento:</strong> Momentos de escuta ativa, apoio emocional e valorização das histórias de vida das pessoas atendidas.</li>
-      <li><strong>Programa de adoção solidária:</strong> Conectar famílias doadoras a famílias em situação de vulnerabilidade para apoio mensal com cestas básicas.</li>
-      <li><strong>Distribuição de kits de higiene:</strong> Para pessoas em situação de rua, com itens como sabonete, escova, absorventes e álcool gel.</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Ideias com Impacto Social</h2>
+      <ul>
+        <li><strong>🌱 Oficinas profissionalizantes:</strong> Capacitação para o mercado de trabalho.</li>
+        <li><strong>🧑‍⚕️ Feiras de cidadania:</strong> Saúde, documentos e orientação gratuita.</li>
+        <li><strong>🤝 Parcerias locais:</strong> Doações de serviços essenciais.</li>
+        <li><strong>🏫 Educação nas escolas:</strong> Projetos de empatia e voluntariado.</li>
+        <li><strong>🌍 Mutirões ambientais:</strong> Limpeza urbana e reciclagem.</li>
+        <li><strong>💬 Rodas de acolhimento:</strong> Apoio emocional e escuta ativa.</li>
+        <li><strong>🧺 Kits de higiene:</strong> Dignidade para quem mais precisa.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Cadastro de Voluntário</h2>
-    <form id="cadastroForm" novalidate>
-      <label for="nome">Nome completo*</label>
-      <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
+    <section id="cadastro">
+      <h2>Cadastro de Voluntário</h2>
+      <form id="cadastroForm" novalidate>
+        <label for="nome">Nome completo*</label>
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
 
-      <label for="email">E-mail*</label>
-      <input type="email" id="email" name="email" required placeholder="email@exemplo.com" />
+        <label for="email">E-mail*</label>
+        <input type="email" id="email" name="email" required placeholder="email@exemplo.com" />
 
-      <label for="telefone">Telefone</label>
-      <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" />
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" />
 
-      <label for="cep">CEP*</label>
-      <input type="text" id="cep" name="cep" required placeholder="00000-000" maxlength="9" pattern="\d{5}-?\d{3}" />
+        <label for="cep">CEP*</label>
+        <input type="text" id="cep" name="cep" required placeholder="00000-000" maxlength="9" />
 
-      <label for="logradouro">Logradouro</label>
-      <input type="text" id="logradouro" name="logradouro" readonly />
+        <label for="logradouro">Logradouro</label>
+        <input type="text" id="logradouro" name="logradouro" readonly />
 
-      <label for="bairro">Bairro</label>
-      <input type="text" id="bairro" name="bairro" readonly />
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro" name="bairro" readonly />
 
-      <label for="cidade">Cidade</label>
-      <input type="text" id="cidade" name="cidade" readonly />
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" name="cidade" readonly />
 
-      <label for="estado">Estado</label>
-      <input type="text" id="estado" name="estado" readonly />
+        <label for="estado">Estado</label>
+        <input type="text" id="estado" name="estado" readonly />
 
-      <label for="disponibilidade">Disponibilidade para eventos*</label>
-      <select id="disponibilidade" name="disponibilidade" required>
-        <option value="">Selecione</option>
-        <option value="fim-de-semana">Fins de semana</option>
-        <option value="dias-de-semana">Dias de semana</option>
-        <option value="qualquer-dia">Qualquer dia</option>
-      </select>
+        <label for="disponibilidade">Disponibilidade*</label>
+        <select id="disponibilidade" name="disponibilidade" required>
+          <option value="">Selecione</option>
+          <option value="fim-de-semana">Fins de semana</option>
+          <option value="dias-de-semana">Dias de semana</option>
+          <option value="qualquer-dia">Qualquer dia</option>
+        </select>
 
-      <label for="observacoes">Observações (opcional)</label>
-      <textarea id="observacoes" name="observacoes" rows="3" placeholder="Conte algo que ache importante..."></textarea>
+        <label for="observacoes">Observações (opcional)</label>
+        <textarea id="observacoes" name="observacoes" rows="3"></textarea>
 
-      <button type="submit">Enviar Cadastro</button>
-      <div id="msg" role="alert"></div>
-    </form>
-  </section>
+        <button type="submit" class="btn-submit">Enviar Cadastro</button>
+        <div id="msg" role="alert"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <p>© 2025 ConectaVoluntário. Todos os direitos reservados.</p>
+      <p>Contato: <a href="mailto:ricardogonzaga1998@outlook.com">ricardogonzaga1998@outlook.com</a> | Tel: (43) 99910-8179</p>
+      <p>
+        Siga-nos: 
+        <a href="https://www.instagram.com/ricardogonzaga98/" target="_blank" rel="noopener">Instagram</a> |
+        <a href="https://wa.me/5543999108179" target="_blank" rel="noopener">WhatsApp</a> |
+      </p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
-
-<footer>
-  <div class="container-footer">
-    <p>© 2025 ConectaVoluntário. Todos os direitos reservados.</p>
-    <p>Contato: <a href="mailto:ricardogonzaga1998@outlook.com">ricardogonzaga1998@outlook.com</a> | Tel: (43) 99910-8179</p>
-    <p>
-      Siga-nos: 
-      <a href="https://www.instagram.com/ricardogonzaga98/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a> |
-      <a href="https://wa.me/5543999108179" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a> |
-      <a href="https://www.facebook.com/seuusuario" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
-    </p>
-  </div>
-</footer>
-
 </html>
