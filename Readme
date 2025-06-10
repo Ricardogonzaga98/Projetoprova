@@ -1,11 +1,41 @@
-                                                   Projeto para ajudar ao proximo                     
+# ConectaVoluntário
 
-. Objetivo é fazer um web site para ajudar as pessoas que moram na rua e estão passando necessidades nas ruas da cidade.
+**Plataforma de Voluntariado que conecta ONGs e voluntários para ampliar o impacto social.**
 
-. Site tera opção de informação dos eventos data,local e horario para econtros nas rua para irem as ruas para  arrecadar alimentos de casa em casa ou roupas que não usa.
+---
 
-. Vamos ter uma pagina de cadastro também para voluntarios que queiram participar no nosso projeto, ajudarem  nesses eventos e participar na nossa equipe da organização.
+## Descrição
 
-. Fazendo parte da nossa equipe vai participar com nós em outras tarefas para ajudar pessoas, ir em comunidades mais pobres da cidades para ajudar com alimentos,roupas e outras coisas.
+Projeto para ajudar ao próximo, com foco em pessoas que moram nas ruas e passam por necessidades na cidade.
 
-.
+O objetivo principal é criar um website para:
+
+- Informar sobre eventos com datas, locais e horários para encontros nas ruas, onde voluntários podem arrecadar alimentos e roupas diretamente nas casas ou em pontos da cidade.
+- Disponibilizar uma página de cadastro para voluntários interessados em participar do projeto e apoiar na organização desses eventos.
+- Integrar voluntários à equipe do projeto, para que possam atuar em diversas frentes, como ações em comunidades carentes, oferecendo alimentos, roupas e outros tipos de apoio social.
+
+Esta plataforma visa facilitar a conexão entre a ONG e pessoas dispostas a ajudar, promovendo uma rede colaborativa eficiente e solidária.
+
+---
+
+## Funcionalidades
+
+- Exibição das demandas atuais da ONG para voluntariado e doações.
+- Formulário de cadastro de voluntários com validação dos dados.
+- Consulta automática de endereço a partir do CEP informado.
+- Interface responsiva e acessível.
+- Rodapé com informações de contato e redes sociais.
+
+---
+
+## Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+- API pública de CEP (ViaCEP)
+
+---
+
+## Estrutura do Projeto
+

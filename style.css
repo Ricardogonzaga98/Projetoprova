@@ -85,3 +85,29 @@ button:hover {
   margin-top: 1rem;
   font-weight: bold;
 }
+footer {
+  background-color: #1a73e8;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  border-radius: 0 0 8px 8px;
+}
+
+footer a {
+  color: #bbe1ff;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
+.container-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
