@@ -1,142 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Cadastro de Voluntário - Projeto Ajudar ao Próximo</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f0f2f5;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #1e90ff;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    main {
-      max-width: 700px;
-      margin: 30px auto;
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #1e90ff;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      margin-top: 20px;
-      background-color: #1e90ff;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background-color: #0f6fd6;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #1e90ff;
-      color: white;
-      margin-top: 40px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ConectaVoluntário - Plataforma de Voluntariado</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Projeto Ajudar ao Próximo</h1>
-    <p>Cadastro de Voluntário</p>
+    <h1>ConectaVoluntário</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Ícone ajudar próximo" />
+    <p>Plataforma que conecta ONGs e voluntários para ampliar o impacto social.</p>
   </header>
 
-  <main>
-    <h2>Preencha seus dados</h2>
-    <form>
-      <label for="nome">Nome Completo:</label>
-      <input type="text" id="nome" required>
+  <section>
+    <h2>Sobre a Plataforma</h2>
+    <p>Esta plataforma foi criada para facilitar a conexão entre a nossa ONG e pessoas dispostas a ajudar. Aqui você encontra as demandas atuais da nossa instituição e pode se cadastrar como voluntário para fazer a diferença!</p>
+  </section>
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" required>
+  <section>
+    <h2>Demandas Atuais</h2>
+    <ul>
+      <li>Arrecadação de alimentos não perecíveis para comunidades carentes.</li>
+      <li>Doação e distribuição de roupas para pessoas em situação de rua.</li>
+      <li>Voluntários para organização e apoio em eventos de arrecadação.</li>
+      <li>Auxílio em ações de conscientização e apoio social em bairros vulneráveis.</li>
+    </ul>
+  </section>
 
-      <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" placeholder="(DDD) 90000-0000">
+  <section>
+    <h2>Cadastro de Voluntário</h2>
+    <form id="cadastroForm" novalidate>
+      <label for="nome">Nome completo*</label>
+      <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
 
-      <label for="cep">CEP:</label>
-      <input type="text" id="cep" maxlength="9" onblur="buscarEndereco()" placeholder="Digite o CEP">
+      <label for="email">E-mail*</label>
+      <input type="email" id="email" name="email" required placeholder="email@exemplo.com" />
 
-      <label for="rua">Rua:</label>
-      <input type="text" id="rua" readonly>
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" />
 
-      <label for="bairro">Bairro:</label>
-      <input type="text" id="bairro" readonly>
+      <label for="cep">CEP*</label>
+      <input type="text" id="cep" name="cep" required placeholder="00000-000" maxlength="9" pattern="\d{5}-?\d{3}" />
 
-      <label for="cidade">Cidade:</label>
-      <input type="text" id="cidade" readonly>
+      <label for="logradouro">Logradouro</label>
+      <input type="text" id="logradouro" name="logradouro" readonly />
 
-      <label for="estado">Estado:</label>
-      <input type="text" id="estado" readonly>
+      <label for="bairro">Bairro</label>
+      <input type="text" id="bairro" name="bairro" readonly />
 
-      <label for="mensagem">Por que deseja ajudar?</label>
-      <textarea id="mensagem" rows="4" placeholder="Descreva aqui..."></textarea>
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" name="cidade" readonly />
 
-      <button type="submit">Cadastrar</button>
+      <label for="estado">Estado</label>
+      <input type="text" id="estado" name="estado" readonly />
+
+      <label for="disponibilidade">Disponibilidade para eventos*</label>
+      <select id="disponibilidade" name="disponibilidade" required>
+        <option value="">Selecione</option>
+        <option value="fim-de-semana">Fins de semana</option>
+        <option value="dias-de-semana">Dias de semana</option>
+        <option value="qualquer-dia">Qualquer dia</option>
+      </select>
+
+      <label for="observacoes">Observações (opcional)</label>
+      <textarea id="observacoes" name="observacoes" rows="3" placeholder="Conte algo que ache importante..."></textarea>
+
+      <button type="submit">Enviar Cadastro</button>
+      <div id="msg" role="alert"></div>
     </form>
-  </main>
+  </section>
 
-  <footer>
-    &copy; 2025 Projeto Ajudar ao Próximo
-  </footer>
-
-  <script>
-    function buscarEndereco() {
-      const cep = document.getElementById('cep').value.replace(/\D/g, '');
-      if (cep.length !== 8) {
-        alert("CEP inválido. Digite 8 números.");
-        return;
-      }
-
-      fetch(`https://viacep.com.br/ws/${cep}/json/`)
-        .then(response => response.json())
-        .then(data => {
-          if (data.erro) {
-            alert("CEP não encontrado.");
-          } else {
-            document.getElementById('rua').value = data.logradouro || '';
-            document.getElementById('bairro').value = data.bairro || '';
-            document.getElementById('cidade').value = data.localidade || '';
-            document.getElementById('estado').value = data.uf || '';
-          }
-        })
-        .catch(() => alert("Erro ao buscar o CEP."));
-    }
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
