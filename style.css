@@ -137,8 +137,8 @@ form textarea {
 
 /* Rodapé */
 footer {
-  background-color: #333;
-  color: #eee;
+  background-color: #5c946e; /* verde claro, combinando com o cabeçalho */
+  color: white;
   text-align: center;
   padding: 2rem 1rem;
 }
