@@ -57,7 +57,7 @@ a:hover {
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-weight: bold;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -81,6 +81,7 @@ ul {
 
 ul li {
   margin-bottom: 0.6rem;
+  font-size: 1.05rem;
 }
 
 /* Formulário */
@@ -121,7 +122,7 @@ form textarea {
   margin-top: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
@@ -150,18 +151,67 @@ footer {
   color: #ffffff;
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
+/* Responsivo - Tablets e Celulares */
+@media (max-width: 900px) {
+  .container {
+    padding: 1.5rem;
+  }
+
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
   }
 
   .btn-primary {
-    padding: 0.5rem 1.2rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-icon {
+    width: 60px;
+  }
+
+  ul li {
     font-size: 1rem;
   }
 
   form {
     padding: 1rem;
+  }
+
+  .btn-primary,
+  .btn-submit {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
   }
 }
