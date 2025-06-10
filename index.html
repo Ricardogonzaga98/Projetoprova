@@ -1,14 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Projeto para ajudar o proximo</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="UTF-8">
+  <title>Cadastro de Voluntário - Projeto Ajudar ao Próximo</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1e90ff;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0f6fd6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1e90ff;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <header>
+    <h1>Projeto Ajudar ao Próximo</h1>
+    <p>Cadastro de Voluntário</p>
+  </header>
+
+  <main>
+    <h2>Preencha seus dados</h2>
+    <form>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" placeholder="(DDD) 90000-0000">
+
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" maxlength="9" onblur="buscarEndereco()" placeholder="Digite o CEP">
+
+      <label for="rua">Rua:</label>
+      <input type="text" id="rua" readonly>
+
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" readonly>
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" readonly>
+
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" readonly>
+
+      <label for="mensagem">Por que deseja ajudar?</label>
+      <textarea id="mensagem" rows="4" placeholder="Descreva aqui..."></textarea>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Projeto Ajudar ao Próximo
+  </footer>
+
+  <script>
+    function buscarEndereco() {
+      const cep = document.getElementById('cep').value.replace(/\D/g, '');
+      if (cep.length !== 8) {
+        alert("CEP inválido. Digite 8 números.");
+        return;
+      }
+
+      fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.erro) {
+            alert("CEP não encontrado.");
+          } else {
+            document.getElementById('rua').value = data.logradouro || '';
+            document.getElementById('bairro').value = data.bairro || '';
+            document.getElementById('cidade').value = data.localidade || '';
+            document.getElementById('estado').value = data.uf || '';
+          }
+        })
+        .catch(() => alert("Erro ao buscar o CEP."));
+    }
+  </script>
+
 </body>
 </html>
