@@ -1,4 +1,4 @@
-/* Reset e fontes */
+/* Reset básico e fonte */
 * {
   margin: 0;
   padding: 0;
@@ -12,15 +12,20 @@ body {
   line-height: 1.6;
 }
 
+/* Links */
 a {
   color: #007f5f;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-a:hover {
+a:hover,
+a:focus {
   text-decoration: underline;
+  outline: none;
 }
 
+/* Container centralizado */
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -37,7 +42,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .top-nav a {
@@ -54,7 +59,7 @@ a:hover {
   outline: none;
 }
 
-/* Cabeçalho principal */
+/* Cabeçalho principal (hero) */
 .hero {
   background: linear-gradient(to right, #3a6351, #5c946e);
   color: white;
@@ -69,7 +74,7 @@ a:hover {
 .hero-icon {
   width: 80px;
   margin-bottom: 1rem;
-  filter: drop-shadow(2px 3px 5px rgba(0,0,0,0.2));
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .hero h1 {
@@ -98,7 +103,7 @@ a:hover {
   transition: background-color 0.3s ease, color 0.3s ease;
   margin: 0 0.5rem;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
@@ -120,6 +125,7 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+/* Listas */
 ul {
   padding-left: 1.5rem;
 }
@@ -152,12 +158,21 @@ form textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #3a6351;
+  outline: none;
 }
 
 form textarea {
   resize: vertical;
 }
 
+/* Botão de envio */
 .btn-submit {
   background-color: #3a6351;
   color: white;
@@ -170,10 +185,13 @@ form textarea {
   transition: background-color 0.3s ease;
 }
 
-.btn-submit:hover {
+.btn-submit:hover,
+.btn-submit:focus {
   background-color: #2f4f41;
+  outline: none;
 }
 
+/* Mensagem após envio */
 #msg {
   margin-top: 1rem;
   font-weight: bold;
@@ -190,13 +208,18 @@ footer {
 
 .container-footer a {
   color: #fcca46;
+  transition: color 0.3s ease;
 }
 
-.container-footer a:hover {
+.container-footer a:hover,
+.container-footer a:focus {
   color: #ffffff;
+  outline: none;
 }
 
-/* Responsivo - Tablets e Celulares */
+/* Responsividade */
+
+/* Tablets e dispositivos médios */
 @media (max-width: 900px) {
   .container {
     padding: 1.5rem;
@@ -224,6 +247,7 @@ footer {
   }
 }
 
+/* Celulares e dispositivos pequenos */
 @media (max-width: 600px) {
   .hero {
     padding: 2rem 1rem 3rem;
