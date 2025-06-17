@@ -6,6 +6,7 @@ const logradouroInput = document.getElementById('logradouro');
 const bairroInput = document.getElementById('bairro');
 const cidadeInput = document.getElementById('cidade');
 const estadoInput = document.getElementById('estado');
+const numeroInput = document.getElementById('numero');
 
 function limparEndereco() {
   logradouroInput.value = '';
@@ -71,6 +72,11 @@ form.addEventListener('submit', (e) => {
 
   if (!logradouroInput.value || !bairroInput.value || !cidadeInput.value || !estadoInput.value) {
     msg.textContent = 'Por favor, informe um CEP válido para completar o endereço.';
+    msg.className = 'error';
+    return;
+  }
+  if (!numeroInput.value) {
+    msg.textContent = 'Por favor, informe o número da casa.';
     msg.className = 'error';
     return;
   }
