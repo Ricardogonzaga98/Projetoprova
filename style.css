@@ -203,8 +203,8 @@ form textarea {
 
 /* Rodapé */
 footer {
-  background-color: #7be495;
-  color: #fff;
+  background-color: #f4fdf4;
+  color: #2e7d5b;
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -216,7 +216,7 @@ footer {
 
 .container-footer a:hover,
 .container-footer a:focus {
-  color: #fff;
+  color: #2e7d5b;
   outline: none;
 }
 
