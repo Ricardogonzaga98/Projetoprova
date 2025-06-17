@@ -82,6 +82,7 @@ a:focus {
   margin-bottom: 0.5rem;
   font-weight: 700;
   letter-spacing: 0.05em;
+  color: #2e7d5b;
 }
 
 .hero p {
@@ -90,6 +91,7 @@ a:focus {
   max-width: 600px;
   line-height: 1.4;
   font-weight: 500;
+  color: #333;
 }
 
 /* Botões principais no header */
@@ -232,11 +234,11 @@ footer {
   background: #f4fdf4;
   color: #2e7d5b;
   border: none;
+  box-shadow: 0 2px 12px rgba(76,203,143,0.08);
+  border-radius: 18px;
   text-align: center;
   padding: 2.2rem 1.2rem 2rem 1.2rem;
-  border-radius: 18px;
   margin: 2.5rem 0 2rem 0;
-  box-shadow: 0 4px 18px rgba(76,203,143,0.10);
 }
 .cta-box h2 {
   font-size: 2rem;
@@ -247,10 +249,12 @@ footer {
   margin-bottom: 1.2rem;
 }
 .cta-box .btn-primary {
-  font-size: 1.1rem;
-  padding: 0.7rem 2.2rem;
   background-color: #4ecb8f;
   color: #fff;
+  font-size: 1.1rem;
+  padding: 0.7rem 2.2rem;
+  border-radius: 25px;
+  margin-top: 0.7rem;
 }
 
 .cta-box .btn-primary:hover {
