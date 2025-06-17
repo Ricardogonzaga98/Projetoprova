@@ -227,6 +227,129 @@ footer {
   border-top: 6px solid #4ecb8f;
 }
 
+/* Box de chamada para ação */
+.cta-box {
+  background: linear-gradient(90deg, #4ecb8f 60%, #b2ffd6 100%);
+  color: #fff;
+  text-align: center;
+  padding: 2.2rem 1.2rem 2rem 1.2rem;
+  border-radius: 18px;
+  margin: 2.5rem 0 2rem 0;
+  box-shadow: 0 4px 18px rgba(76,203,143,0.10);
+}
+.cta-box h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.cta-box p {
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+}
+.cta-box .btn-primary {
+  font-size: 1.1rem;
+  padding: 0.7rem 2.2rem;
+}
+
+/* Box de impacto social */
+.impacto-box {
+  background: #eafff3;
+  color: #2e7d5b;
+  text-align: center;
+  border-radius: 16px;
+  margin: 2.5rem 0 2rem 0;
+  padding: 1.7rem 1rem 1.2rem 1rem;
+  box-shadow: 0 2px 12px rgba(76,203,143,0.08);
+}
+.impacto-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.impacto-numeros {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.impacto-numeros div {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 6px rgba(76,203,143,0.07);
+  min-width: 110px;
+}
+
+/* Depoimentos */
+.depoimentos-box {
+  background: #f4fdf4;
+  border-left: 6px solid #4ecb8f;
+  border-radius: 12px;
+  margin: 2.5rem 0 2rem 0;
+  padding: 1.7rem 1.2rem 1.2rem 1.2rem;
+  box-shadow: 0 2px 12px rgba(76,203,143,0.08);
+}
+.depoimentos-box h2 {
+  color: #2e7d5b;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+.depoimentos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.depoimentos-lista blockquote {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(76,203,143,0.07);
+  padding: 1.1rem 1.2rem 0.7rem 1.2rem;
+  max-width: 320px;
+  font-style: italic;
+  color: #333;
+  border-left: 4px solid #4ecb8f;
+}
+.depoimentos-lista footer {
+  font-style: normal;
+  color: #4ecb8f;
+  font-weight: 600;
+  margin-top: 0.7rem;
+  font-size: 0.98em;
+}
+
+/* Ícones nos títulos */
+section h2 span {
+  margin-right: 0.5rem;
+}
+
+/* Ícones nos campos do formulário */
+.form-icon {
+  margin-right: 0.4em;
+  font-size: 1.1em;
+  vertical-align: middle;
+  opacity: 0.85;
+}
+
+/* Personalização extra do formulário */
+#cadastroForm input,
+#cadastroForm select,
+#cadastroForm textarea {
+  background: #f8fffa;
+  border: 1.5px solid #b2ffd6;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+#cadastroForm input:focus,
+#cadastroForm select:focus,
+#cadastroForm textarea:focus {
+  border-color: #4ecb8f;
+  box-shadow: 0 0 0 2px #b2ffd6;
+}
+#cadastroForm label {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
 /* Responsividade */
 
 /* Tablets e dispositivos médios */
