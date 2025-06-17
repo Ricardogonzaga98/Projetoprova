@@ -1,41 +1,86 @@
 # ConectaVoluntário
 
-**Plataforma de Voluntariado que conecta ONGs e voluntários para ampliar o impacto social.**
+**Plataforma de Voluntariado que conecta ONGs, voluntários e pessoas em situação de vulnerabilidade para ampliar o impacto social.**
 
 ---
 
 ## Descrição
 
-Projeto para ajudar ao próximo, com foco em pessoas que moram nas ruas e passam por necessidades na cidade.
+O ConectaVoluntário é um projeto social que visa transformar vidas por meio do voluntariado, promovendo empatia, solidariedade e impacto positivo nas comunidades.
 
-O objetivo principal é criar um website para:
+A plataforma permite:
+- Informar sobre demandas sociais e eventos beneficentes.
+- Facilitar o cadastro de voluntários interessados em ajudar.
+- Conectar pessoas dispostas a ajudar com causas reais.
+- Promover ações de arrecadação de alimentos, roupas, apoio emocional e muito mais.
 
-- Informar sobre eventos com datas, locais e horários para encontros nas ruas, onde voluntários podem arrecadar alimentos e roupas diretamente nas casas ou em pontos da cidade.
-- Disponibilizar uma página de cadastro para voluntários interessados em participar do projeto e apoiar na organização desses eventos.
-- Integrar voluntários à equipe do projeto, para que possam atuar em diversas frentes, como ações em comunidades carentes, oferecendo alimentos, roupas e outros tipos de apoio social.
+---
 
-Esta plataforma visa facilitar a conexão entre a ONG e pessoas dispostas a ajudar, promovendo uma rede colaborativa eficiente e solidária.
+## Objetivos
+- **Conectar pessoas dispostas a ajudar** com causas e projetos sociais reais.
+- **Facilitar o acesso** a oportunidades de voluntariado em diferentes áreas e comunidades.
+- **Promover o impacto social** por meio da colaboração, empatia e solidariedade.
+- **Valorizar o trabalho voluntário** e inspirar mais pessoas a fazerem a diferença.
 
 ---
 
 ## Funcionalidades
-
-- Exibição das demandas atuais da ONG para voluntariado e doações.
-- Formulário de cadastro de voluntários com validação dos dados.
-- Consulta automática de endereço a partir do CEP informado.
-- Interface responsiva e acessível.
+- Exibição das demandas atuais para voluntariado e doações.
+- Formulário de cadastro de voluntários com validação dos dados e consulta automática de endereço via CEP.
+- Seção de ideias com impacto social para inspirar novas ações.
+- Destaque de impacto social com números de voluntários, ações e pessoas beneficiadas.
+- Seção de depoimentos de voluntários e beneficiados.
+- Interface responsiva, acessível e moderna.
 - Rodapé com informações de contato e redes sociais.
 
 ---
 
-## Tecnologias Utilizadas
+## Seções do Site
+- **Início:** Apresentação do projeto e chamada para ação.
+- **Objetivos:** Missão e valores do ConectaVoluntário.
+- **Nosso Impacto:** Números de voluntários, ações e pessoas beneficiadas.
+- **Demandas Atuais:** Lista de necessidades e oportunidades de voluntariado.
+- **Ideias com Impacto Social:** Sugestões de ações e projetos sociais.
+- **Depoimentos:** Relatos de voluntários e beneficiados.
+- **Cadastro de Voluntário:** Formulário para novos voluntários se inscreverem.
+- **Contato:** Informações para contato e redes sociais.
 
+---
+
+## Tecnologias Utilizadas
 - HTML5
 - CSS3
-- JavaScript 
+- JavaScript
 - API pública de CEP (ViaCEP)
 
 ---
 
 ## Estrutura do Projeto
+
+- `index.html` — Página principal com todas as seções e formulário de cadastro.
+- `style.css` — Estilos personalizados e responsivos.
+- `script.js` — Lógica de validação e integração com ViaCEP.
+- `objetivos.html` — Página extra sobre os objetivos do projeto.
+- `opcoes.html` — Outras opções e informações.
+
+---
+
+## Como contribuir
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature: `git checkout -b minha-feature`.
+3. Commit suas alterações: `git commit -m 'Minha nova feature'`.
+4. Push para a branch: `git push origin minha-feature`.
+5. Abra um Pull Request.
+
+---
+
+## Contato
+- E-mail: ricardogonzaga1998@outlook.com
+- Instagram: [@ricardogonzaga98](https://www.instagram.com/ricardogonzaga98/)
+- WhatsApp: [Clique aqui](https://wa.me/5543999108179)
+
+---
+
+## Licença
+Este projeto é livre para uso não comercial e colaborativo.
 
