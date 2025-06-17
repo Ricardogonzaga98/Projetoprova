@@ -61,8 +61,8 @@ a:focus {
 
 /* Cabeçalho principal (hero) */
 .hero {
-  background: linear-gradient(90deg, #4ecb8f 60%, #b2ffd6 100%);
-  color: #fff;
+  background: none;
+  color: #4ecb8f;
   text-align: center;
   padding: 3rem 1rem 5rem;
   display: flex;
@@ -227,10 +227,11 @@ footer {
   border-top: 6px solid #4ecb8f;
 }
 
-/* Box de chamada para ação */
+/* Box de chamada para ação com fundo igual ao site */
 .cta-box {
-  background: linear-gradient(90deg, #4ecb8f 60%, #b2ffd6 100%);
-  color: #fff;
+  background: #f4fdf4;
+  color: #2e7d5b;
+  border: none;
   text-align: center;
   padding: 2.2rem 1.2rem 2rem 1.2rem;
   border-radius: 18px;
@@ -248,6 +249,12 @@ footer {
 .cta-box .btn-primary {
   font-size: 1.1rem;
   padding: 0.7rem 2.2rem;
+  background-color: #4ecb8f;
+  color: #fff;
+}
+
+.cta-box .btn-primary:hover {
+  background-color: #2e7d5b;
 }
 
 /* Box de impacto social */
