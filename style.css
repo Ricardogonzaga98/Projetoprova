@@ -220,6 +220,14 @@ footer {
   outline: none;
 }
 
+/* Ícones de contato no rodapé */
+.contato-icon {
+  font-size: 1.15em;
+  vertical-align: middle;
+  margin-right: 0.2em;
+  opacity: 0.85;
+}
+
 /* Banner voluntário no cadastro */
 #cadastro h2::before {
   content: '🤲 '; /* ícone de mãos */
