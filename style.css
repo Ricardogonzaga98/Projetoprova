@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f4f9f4;
+  background-color: #f4fdf4;
   color: #333;
   line-height: 1.6;
 }
@@ -34,7 +34,7 @@ a:focus {
 
 /* NAV - Navegação superior */
 .top-nav {
-  background-color: #3a6351; /* verde escuro */
+  background-color: #4ecb8f; /* verde claro vibrante */
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -46,7 +46,7 @@ a:focus {
 }
 
 .top-nav a {
-  color: #fcca46; /* amarelo claro */
+  color: #eafff3;
   font-weight: 600;
   font-size: 1.1rem;
   transition: color 0.3s ease;
@@ -61,8 +61,8 @@ a:focus {
 
 /* Cabeçalho principal (hero) */
 .hero {
-  background: linear-gradient(to right, #3a6351, #5c946e);
-  color: white;
+  background: linear-gradient(90deg, #4ecb8f 60%, #b2ffd6 100%);
+  color: #fff;
   text-align: center;
   padding: 3rem 1rem 5rem;
   display: flex;
@@ -95,8 +95,8 @@ a:focus {
 /* Botões principais no header */
 .btn-primary {
   display: inline-block;
-  background-color: #fcca46;
-  color: #333;
+  background-color: #7be495;
+  color: #fff;
   padding: 0.75rem 1.8rem;
   border-radius: 25px;
   font-weight: bold;
@@ -109,8 +109,8 @@ a:focus {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #fbb034;
-  color: #222;
+  background-color: #4ecb8f;
+  color: #eafff3;
   outline: none;
 }
 
@@ -121,7 +121,7 @@ section {
 
 section h2 {
   font-size: 1.8rem;
-  color: #3a6351;
+  color: #4ecb8f;
   margin-bottom: 1rem;
 }
 
@@ -139,8 +139,9 @@ ul li {
 form {
   background-color: white;
   padding: 2rem;
+  border: 2px solid #b2ffd6;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 16px 0 #d6ffe6;
 }
 
 form label {
@@ -174,8 +175,8 @@ form textarea {
 
 /* Botão de envio */
 .btn-submit {
-  background-color: #3a6351;
-  color: white;
+  background-color: #4ecb8f;
+  color: #fff;
   border: none;
   padding: 0.75rem;
   border-radius: 5px;
@@ -187,7 +188,7 @@ form textarea {
 
 .btn-submit:hover,
 .btn-submit:focus {
-  background-color: #2f4f41;
+  background-color: #38b87c;
   outline: none;
 }
 
@@ -200,21 +201,30 @@ form textarea {
 
 /* Rodapé */
 footer {
-  background-color: #5c946e; /* verde claro, combinando com o cabeçalho */
-  color: white;
+  background-color: #7be495;
+  color: #fff;
   text-align: center;
   padding: 2rem 1rem;
 }
 
 .container-footer a {
-  color: #fcca46;
+  color: #4ecb8f;
   transition: color 0.3s ease;
 }
 
 .container-footer a:hover,
 .container-footer a:focus {
-  color: #ffffff;
+  color: #fff;
   outline: none;
+}
+
+/* Banner voluntário no cadastro */
+#cadastro h2::before {
+  content: '🤲 '; /* ícone de mãos */
+}
+
+#cadastroForm {
+  border-top: 6px solid #4ecb8f;
 }
 
 /* Responsividade */
